@@ -26,14 +26,14 @@
                     months = 12 * (years % 1),
                     days = Math.floor(30 * (months % 1)),
                     el = document.getElementById('age');
-                el.innerText = Math.floor(years);
+                el.innerText = Math.floor(years); //inner element as putting inside somewhere
             }
         </script>
 	</head>
 	<body data-new-gr-c-s-loaded="14.993.0">
         <form action="checkit(this)">
             <p>First name: <input id="firstname" name="first_name" type="text" onchange="checkit(this)" /></p>
-            <p>Last name: <input id="lastname" name="last_name" type="text" /></p>
+            <p>Last name: <input id="lastname" name="last_name" type="text" onchange="checkit(this)" /></p>
             <p>User name: <input id="username" name="Username" type="text" /></p>
             <p>Password: <input id="pwd" name="password" type="password" /></p>
             <p>Email address: <input id="emailaddr" name="email_address" type="email" /></p>
