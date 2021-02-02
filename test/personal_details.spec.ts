@@ -45,6 +45,6 @@ fixture `Personal Details Tests`            // Notice the back-tick, NOT a singl
             await t     // We wait on a Promise
                 .click("#birthday")
                 .typeText(ageInput, '1993-01-08')
-                .expect(age.innerText).eql("28", 'Correct age displayed')
+                .expect(age.innerText).eql("28", 'Correct age not displayed');
             await sleep(3000);
     });
