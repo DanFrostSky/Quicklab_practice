@@ -17,7 +17,7 @@ fixture `Page Redirection Tests`            // Notice the back-tick, NOT a singl
 
         await t
             .expect(location).eql(expectedResult) // add your assert here...
-        // assert that the current location mataches the expectedResult
+        // assert that the current location matches the expectedResult
 
         // the sleep isn't needed but useful for pausing the browser, value is in milliseconds
         await sleep(3000);
