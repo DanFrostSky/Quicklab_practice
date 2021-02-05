@@ -9,6 +9,10 @@ const getWindowLocation = ClientFunction(() => document.location.href);
 fixture `Populate Your Name window with Peter Parker`   
     .page(`https://devexpress.github.io/testcafe/example/`)
 
+    .beforeEach(async () => {
+        await waitForReact();
+    });
+
     test('Populate Window', async t => {
         const populate = Selector('#populate');
         const name = Selector('#developer-name');
@@ -21,3 +25,11 @@ fixture `Populate Your Name window with Peter Parker`
         // the sleep isn't needed but useful for pausing the browser, value is in milliseconds
         await sleep(3000);
     });
+
+    test(`Activate Slider`, async t => {
+        const slider = Selector('#slider');
+        const select = Selector('#tried-test-cafe');
+
+        await t
+            .click(slider) 
+    })
