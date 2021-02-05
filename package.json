@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "mocha": "^8.2.1",
     "rx": "^4.1.0",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.3",
+    "testcafe-react-selectors": "^4.1.4"
   },
   "devDependencies": {
     "@types/mocha": "^8.2.0",
